@@ -1,0 +1,36 @@
+1) initialize the project
+npm init
+
+2)install parcel //PARCEL JS Bundler
+npm i parcel -D
+
+3)add Parcel scripts to package.json
+"start": "parcel index.html",
+"build": "parcel build index.html"
+
+4)install core-js regenerator for Polyfilling ES6 features 
+regenerator pollyfill async behavior
+core-js everything else
+npm i core-js regenerator
+
+5)npm run start 
+As the error indicates, "main" is used to refer to scripts. You cannot have it refer to an HTML file. Change that to be .js, .mjs, or .cjs.
+=======>Changing main to default in package.json
+=======>Adding type="module" to script tag instead of defer 
+
+
+6)Refactoring code for MVC Architecture
+
+7)npm i fractional 
+new Fraction.Fraction(decimalNumber)=> nominator/denomi
+
+this.#data.ingredients.map(this.#generateIngredientMarkUp)
+
+
+8)Update the view
+creating newDOM
+
+The isSameNode() method of the Node interface is a legacy alias the for the === strict equality operator. That is, it tests whether two nodes are the same (in other words, whether they reference the same object).
+
+Node.isEqualNode()
+The isEqualNode() method of the Node interface tests whether two nodes are equal. Two nodes are equal when they have the same type, defining characteristics (for elements, this would be their ID, number of children, and so forth), its attributes match, and so on. The specific set of data points that must match varies depending on the types of the nodes.
